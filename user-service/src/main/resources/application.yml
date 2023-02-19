@@ -3,13 +3,13 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/powerup
+    url: jdbc:mysql://localhost:3306/restaurante
     username: root
-    password: 1234
+    password:
 
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-appDescription: "Pragma Powerup"
+appDescription: "user service"
 appVersion: "1.0.0"
