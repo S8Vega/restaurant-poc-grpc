@@ -2,8 +2,10 @@ package com.thechaoscompany.user.infrastructure.out.jpa.entity;
 
 import lombok.Data;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -28,7 +30,7 @@ public class UserEntity implements Serializable {
     private String email;
     @Column(name = "clave")
     private String password;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "id_rol")
     private RoleEntity role;
 }
