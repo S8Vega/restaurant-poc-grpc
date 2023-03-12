@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "3a4aa80f-7217-493d-b720-5729fdb1814c",
+		"name": "restaurant",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11080405"
+	},
+	"item": [
+		{
+			"name": "save user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1090518646,\r\n    \"name\": \"Brayan Sebastian\",\r\n    \"lastName\": \"Vega Garcia\",\r\n    \"phoneNumber\": \"3136658244\",\r\n    \"email\": \"bsebastianvg18@gmail.com\",\r\n    \"password\": \"superclave\",\r\n    \"nameRole\": \"admin\",\r\n    \"descriptionRole\": \"hace todo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/api/v1/user/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swagger",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/swagger-ui/index.html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"swagger-ui",
+						"index.html"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
